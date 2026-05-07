@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches the snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="py-2 text-center opacity-40 text-sm"
+  >
+    AI-generated responses may be inaccurate. Verify critical information.
+  </footer>
+</DocumentFragment>
+`;

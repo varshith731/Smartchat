@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItem Component should match MenuItem component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mt-6 font-semibold"
+  >
+    <div
+      class="flex justify-between items-center px-1 py-1 border-b text-slate-100 cursor-pointer transition-colors duration-200 hover:bg-slate-500 focus:bg-indigo-100"
+    >
+      <a
+        class="flex-grow px-2 transition-colors duration-200 hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+        href="/test-link"
+      >
+        Test Title
+      </a>
+      <button
+        aria-controls="menuitem-list-test-title"
+        aria-expanded="false"
+        class="cursor-pointer transition-colors duration-200 hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      >
+        <svg
+          class="lucide lucide-chevron-down"
+          fill="none"
+          height="18"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+        <span
+          class="sr-only"
+        >
+          Expand Test Title
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

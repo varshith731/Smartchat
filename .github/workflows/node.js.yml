@@ -1,0 +1,58 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.X, 20.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install
+
+      # Removing node_modules to ensure any build artifacts or state introduced by the initial build
+      # that affect yarn test running are cleaned up.
+      - name: Remove node_modules
+        run: rm -rf node_modules
+
+      - name: Reinstall dependencies
+        run: yarn install
+
+      - name: Set environment variables
+        run: |
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
+          echo "PINECONE_API_KEY=${{ secrets.PINECONE_API_KEY }}" >> $GITHUB_ENV
+          echo "PINECONE_ENVIRONMENT=${{ secrets.PINECONE_ENVIRONMENT }}" >> $GITHUB_ENV
+          echo "PINECONE_INDEX_NAME=${{ secrets.PINECONE_INDEX_NAME }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_SERVER_URL=${{ secrets.NEXT_PUBLIC_SERVER_URL }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_SERVER_GPU_URL=${{ secrets.NEXT_PUBLIC_SERVER_GPU_URL }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_SERVER_SECRET_KEY=${{ secrets.NEXT_PUBLIC_SERVER_SECRET_KEY }}" >> $GITHUB_ENV
+          echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}" >> $GITHUB_ENV
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
+          echo "CLAUDE_API_KEY=${{ secrets.CLAUDE_API_KEY }}" >> $GITHUB_ENV
+          echo "JWT_SECRET=${{ secrets.GWT_SECRET }}" >> $GITHUB_ENV
+          echo "DEFAULT_USERNAME=${{ secrets.DEFAULT_USERNAME }}" >> $GITHUB_ENV
+          echo "DEFAULT_PASSWORD=${{ secrets.DEFAULT_PASSWORD }}" >> $GITHUB_ENV
+
+      - name: Rebuild project
+        run: yarn build
+
+      - name: Run tests
+        run: yarn test

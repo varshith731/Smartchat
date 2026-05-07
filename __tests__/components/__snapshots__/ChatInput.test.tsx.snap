@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatInput matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col w-full justify-around flex-shrink-0 items-center  my-1"
+  >
+    <div
+      class="flex w-full justify-around items-center border-2 border-indigo-300 bg-indigo-200 bg-opacity-30 rounded-lg"
+    >
+      <div
+        class="flex w-3/12 ms:w-2/12 sm:w-1/12 items-center justify-around md:mx-1"
+      >
+        <div
+          class="relative group"
+        >
+          <button
+            aria-label="Capture Screenshot"
+            class="flex items-center justify-center font-bold  rounded cursor-pointer disabled:cursor-not-allowed"
+          >
+            <svg
+              class="lucide lucide-camera"
+              fill="none"
+              height="28"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="0 0 26 26"
+              width="28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="21"
+                stroke-dasharray="2 2"
+                width="24"
+                x="1"
+                y="2"
+              />
+              <path
+                d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                fill="#5A5C62"
+                stroke="black"
+              />
+              <circle
+                cx="12"
+                cy="13"
+                fill="white"
+                r="3"
+              />
+            </svg>
+          </button>
+          <span
+            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 hidden group-hover:block bg-gray-100 text-black text-xs rounded py-1 px-5 whitespace-nowrap"
+          >
+            Capture Screenshot
+          </span>
+        </div>
+        <div
+          class="relative group"
+        >
+          <button
+            aria-label="Upload File"
+            class="flex items-center justify-center font-bold  rounded cursor-pointer disabled:cursor-not-allowed"
+          >
+            <label
+              class="flex items-center justify-center  text-white font-bold px-2 rounded cursor-pointer"
+              tabindex="0"
+            >
+              <input
+                accept="image/*, .pdf, .html, .xml, .docx, .txt, .yml, .yaml, .tsx, .ts, .js, .cjs, .coffee, .css, .scss, .sass, less, .xsl, .xlsx,  .jsx, .java, .py, .php, .rb, .erb, .rake, .slim, .cpp, .c, .go, .rs, .log, .cjs, .snap, .sh, .md, .csv, .html, .json, .toml, .sh,  .map,  .xml, .lock, .mod, .metal, .sum, .h, .m, .asp, .net, .dll, .cs, .vb, .fs, .config, .resx, .csproj, .sln"
+                aria-label="Upload file"
+                style="display: none;"
+                type="file"
+              />
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-paperclip"
+                fill="none"
+                height="26"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                style="background: rgb(250, 250, 251); cursor: pointer; color: rgb(44, 46, 47); border: 1px solid #d7dadf;"
+                viewBox="0 0 24 24"
+                width="26"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"
+                />
+              </svg>
+            </label>
+          </button>
+          <span
+            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 hidden group-hover:block bg-gray-100 text-black text-xs rounded py-1 px-5 whitespace-nowrap"
+          >
+            Upload File
+          </span>
+        </div>
+      </div>
+      <form
+        class="flex items-center w-8/12 ms:w-9/12 xs:w-10/12 xl:w-11/12 px-2 py-1 rounded-lg hover:bg-indigo-100 focus:outline-none focus:ring focus:ring-stone-300 focus:ring-offset-red"
+      >
+        <textarea
+          aria-label="Enter your message here"
+          class="w-full max-h-96 placeholder-gray-400 overflow-y-auto p-3 focus:ring-stone-100 focus:outline-none"
+          id="userInput"
+          name="userInput"
+          placeholder="Click to send. Shift + Enter for a new line."
+          rows="1"
+          spellcheck="true"
+        />
+        <button
+          aria-label="Send message"
+          class="p-1 border-none opacity-60 hover:stone-600 disabled:cursor-not-allowed"
+          disabled=""
+          type="submit"
+        >
+          <svg
+            class="w-5 h-5 rotate-90 fill-current"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            >
+              <title>
+                Arrow Submit Button
+              </title>
+            </path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChatInput matches snapshot when isVisionModel is false 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col w-full justify-around flex-shrink-0 items-center  my-1"
+  >
+    <div
+      class="flex w-full justify-around items-center border-2 border-indigo-300 bg-indigo-200 bg-opacity-30 rounded-lg"
+    >
+      <div
+        class="flex w-3/12 ms:w-2/12 sm:w-1/12 items-center justify-around md:mx-1"
+      >
+        <div
+          class="relative group"
+        >
+          <button
+            aria-label="Capture Screenshot"
+            class="flex items-center justify-center font-bold  rounded cursor-pointer disabled:cursor-not-allowed"
+            disabled=""
+          >
+            <svg
+              class="lucide lucide-camera"
+              fill="none"
+              height="28"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="0 0 26 26"
+              width="28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="21"
+                stroke-dasharray="2 2"
+                width="24"
+                x="1"
+                y="2"
+              />
+              <path
+                d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                fill="#5A5C62"
+                stroke="black"
+              />
+              <circle
+                cx="12"
+                cy="13"
+                fill="white"
+                r="3"
+              />
+            </svg>
+          </button>
+          <span
+            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 hidden group-hover:block bg-gray-100 text-black text-xs rounded py-1 px-5 whitespace-nowrap"
+          >
+            gemini-2.0-flash does not have vision feature
+          </span>
+        </div>
+        <div
+          class="relative group"
+        >
+          <button
+            aria-label="Upload File"
+            class="flex items-center justify-center font-bold  rounded cursor-pointer disabled:cursor-not-allowed"
+          >
+            <label
+              class="flex items-center justify-center  text-white font-bold px-2 rounded cursor-pointer"
+              tabindex="0"
+            >
+              <input
+                accept="image/*, .pdf, .html, .xml, .docx, .txt, .yml, .yaml, .tsx, .ts, .js, .cjs, .coffee, .css, .scss, .sass, less, .xsl, .xlsx,  .jsx, .java, .py, .php, .rb, .erb, .rake, .slim, .cpp, .c, .go, .rs, .log, .cjs, .snap, .sh, .md, .csv, .html, .json, .toml, .sh,  .map,  .xml, .lock, .mod, .metal, .sum, .h, .m, .asp, .net, .dll, .cs, .vb, .fs, .config, .resx, .csproj, .sln"
+                aria-label="Upload file"
+                style="display: none;"
+                type="file"
+              />
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-paperclip"
+                fill="none"
+                height="26"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                style="background: rgb(250, 250, 251); cursor: pointer; color: rgb(44, 46, 47); border: 1px solid #d7dadf;"
+                viewBox="0 0 24 24"
+                width="26"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"
+                />
+              </svg>
+            </label>
+          </button>
+          <span
+            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 hidden group-hover:block bg-gray-100 text-black text-xs rounded py-1 px-5 whitespace-nowrap"
+          >
+            Upload File
+          </span>
+        </div>
+      </div>
+      <form
+        class="flex items-center w-8/12 ms:w-9/12 xs:w-10/12 xl:w-11/12 px-2 py-1 rounded-lg hover:bg-indigo-100 focus:outline-none focus:ring focus:ring-stone-300 focus:ring-offset-red"
+      >
+        <textarea
+          aria-label="Enter your message here"
+          class="w-full max-h-96 placeholder-gray-400 overflow-y-auto p-3 focus:ring-stone-100 focus:outline-none"
+          id="userInput"
+          name="userInput"
+          placeholder="Click to send. Shift + Enter for a new line."
+          rows="1"
+          spellcheck="true"
+        />
+        <button
+          aria-label="Send message"
+          class="p-1 border-none opacity-60 hover:stone-600 disabled:cursor-not-allowed"
+          disabled=""
+          type="submit"
+        >
+          <svg
+            class="w-5 h-5 rotate-90 fill-current"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            >
+              <title>
+                Arrow Submit Button
+              </title>
+            </path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

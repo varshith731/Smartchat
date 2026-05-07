@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AIConfigPanel matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <div>
+        Configure AI Assistant
+      </div>
+    </div>
+    <div>
+      <form
+        class="pt-6 pb-2 space-y-6"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700"
+              for="name"
+            >
+              Name
+            </label>
+            <input
+              class="flex h-10 rounded-md border border-gray-200 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-300 w-full bg-gray-50"
+              id="name"
+              placeholder="Enter assistant name"
+              required=""
+              value="TestBot"
+            />
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="role"
+            >
+              Assistant Role
+            </label>
+            <input
+              class="flex h-10 rounded-md border border-gray-200 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-300 w-full bg-gray-50"
+              id="role"
+              placeholder="Enter assistant role"
+              required=""
+              value="Test Assistant"
+            />
+          </div>
+        </div>
+        <div
+          class="space-y-2"
+        >
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="namespace"
+          >
+            Select RAG Namespace
+          </label>
+          <select
+            aria-label="namespace"
+            id="namespace"
+          >
+            <option
+              value="none"
+            >
+              None
+            </option>
+            <option
+              value="namespace1"
+            >
+              Namespace 1
+            </option>
+            <option
+              value="namespace2"
+            >
+              Namespace 2
+            </option>
+          </select>
+        </div>
+        <div
+          class="bg-slate-50 p-4 rounded-lg space-y-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="text-gray-700"
+              for="model"
+            >
+              Choose AI Model
+            </label>
+            <select
+              aria-label="model"
+              id="model"
+            >
+              <option
+                value="model1"
+              >
+                Model 1
+              </option>
+              <option
+                value="model2"
+              >
+                Model 2
+              </option>
+            </select>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700"
+              for="topP"
+            >
+              Model Top P: 0.70
+            </label>
+            <div>
+              Slider
+            </div>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700"
+              for="temperature"
+            >
+              Model Temperature: 0.50
+            </label>
+            <div>
+              Slider
+            </div>
+          </div>
+        </div>
+        <div
+          class="space-y-2"
+        >
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700"
+            for="basePrompt"
+          >
+            Enter Information You Want AI to Remember
+          </label>
+          <textarea
+            class="flex min-h-[80px] rounded-md border border-gray-200 px-3 py-2 text-sm ring-offset-white placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-300 w-full resize-none bg-gray-50"
+            id="basePrompt"
+            placeholder="Enter text here for AI to remember throughout the chat"
+            rows="4"
+          >
+            Test prompt
+          </textarea>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-gray-950 dark:focus-visible:ring-gray-300 bg-gray-900 hover:bg-gray-900/90 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 h-10 w-full bg-gradient-to-r from-indigo-100 via-gray-800 to-slate-600 text-white font-semibold py-2 px-4 rounded shadow-sm shadow-cyan-200 drop-shadow-sm"
+          type="submit"
+        >
+          Save Configuration
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
