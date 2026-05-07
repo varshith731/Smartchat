@@ -76,13 +76,13 @@ _The SmartChat home screen showing the chat interface without RAG initiated and 
 
 _The SmartChat home screen showing the chat interface with the Config panel closed and displaying a coding block._
 
-### Visual Model Example
+### Pdf Model Example
 
 <div align="center">
-  <img src="images/chat-with-image.png" width="90%" alt="SmartChat With Image">
+  <img src="images/chat-with-pdf.png" width="90%" alt="SmartChat With Pdf">
 </div>
 
-_The AI model GPT-4o is discussing the screenshot image with the user._
+_The AI model llama 3.1 8b is discussing the pdf with the user._
 
 ### RAG Response Generation
 
