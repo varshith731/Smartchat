@@ -2,13 +2,13 @@
 
 ## Introduction
 
-SmartChat is a multimodal AI assistant platform comprising two components: a full stack local application (this repository) and a cloud-based GPU server ([SmartChat-FastAPI](https://github.com/linghong/smartchat-fastapi) repository).
+SmartChat is a multimodal AI assistant platform comprising two components: a full stack local application (this repository) and a cloud-based GPU server ([Smartchat-fastapi](https://github.com/varshith731/Smartchat-fastapi) repository).
 
 **Local Application**:
 The local application is a full-stack application developed with Next.js and TypeScript, with plan to also run small AI models in a Python environment. It operates on a local computer, serving as the main interface for users to keep their most important information securely on their local machine. This interface is a multimodal AI chat platform, leveraging various AI models and supports both standard chat and enhanced chat with RAG (Retrieval-Augmented Generation) capabilities. When users ask questions related to uploaded data, the chatbot fetches and references relevant sections from stored PDF data to provide accurate and precise answers.
 
 **Cloud GPU Server**:
-The cloud-based GPU server is designed for running AI models or any AI tasks that require substantial GPU resources, which are not feasible to run locally. Refer to the [SmartChat-FastAPI](https://github.com/linghong/smartchat-fastapi) repository for more details.
+The cloud-based GPU server is designed for running AI models or any AI tasks that require substantial GPU resources, which are not feasible to run locally. Refer to the [Smartchat-fastapi](https://github.com/varshith731/Smartchat-fastapi) repository for more details.
 
 ## Features
 
@@ -31,7 +31,7 @@ This AI chat platform allows you to select from a variety of Generative AI model
 
 2. From Open Sources Models Self-hosted in a GPU Server:
 
-   The platform can also relay messages to a remote backend (refer to the [SmartChat-FastAPI](https://github.com/linghong/smartchat-fastapi))repository, Once configured, this backend server can run open-source AI models.
+   The platform can also relay messages to a remote backend (refer to the [Smartchat-fastapi](https://github.com/varshith731/Smartchat-fastapi))repository, Once configured, this backend server can run open-source AI models.
 
 The models generate responses to user messages, and send back to the SmartChat platform.
 
@@ -54,7 +54,7 @@ Users have the ability to upload documents in PDF format, with options to custom
 
 ### AI Model Finetuning:
 
-Users can refine AI models to meet their specific needs by uploading training data and selecting appropriate fine-tuning parameters. If fine-tuning OpenAI models, the requirements are sent to the OpenAI server. For open-source models, the requirements are sent to a self-hosted server, which can be set up using the code at [SmartChat-FastAPI](https://github.com/linghong/smartchat-fastapi). This server processes the fine-tuning requirements (which need to be developed), allowing for a more tailored user experience.
+Users can refine AI models to meet their specific needs by uploading training data and selecting appropriate fine-tuning parameters. If fine-tuning OpenAI models, the requirements are sent to the OpenAI server. For open-source models, the requirements are sent to a self-hosted server, which can be set up using the code at [Smartchat-fastapi](https://github.com/varshith731/Smartchat-fastapi). This server processes the fine-tuning requirements (which need to be developed), allowing for a more tailored user experience.
 
 ## Screenshots
 
@@ -123,7 +123,7 @@ npm install --global yarn
 
 ### Clone or Download the SmartChat Project Code
 
-For non-developer, go to the [GitHub SmartChat page](https://github.com/linghong/smartchat). Click the green "Code" button and select "Download ZIP." Save the ZIP file to your computer and unzip it.
+For non-developer, go to the [GitHub Smartchat page](https://github.com/varshith731/Smartchat). Click the green "Code" button and select "Download ZIP." Save the ZIP file to your computer and unzip it.
 
 ### Install Dependency:
 
@@ -300,7 +300,3 @@ yarn test
 ### Issues Reports and Feature Requests
 
 If you encounter any problems or have suggestions for improvements, please open an issue. Provide as much detail as possible to help address it quickly.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=linghong/smartchat&type=Date)](https://star-history.com/#linghong/smartchat&Date)
